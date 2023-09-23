@@ -58,10 +58,9 @@ export default function SNScreen() {
 
       const pdfUrl = await getDownloadURL(storageRef);
 
-      // Instead of subjectName and subCode, use title and body
       const docRef = await addDoc(collection(database, "documents"), {
-        title, // Use title state
-        body, // Use body state
+        title, 
+        body, 
         dop,
         sem,
         pdfUrl,

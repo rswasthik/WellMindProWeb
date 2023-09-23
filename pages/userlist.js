@@ -14,7 +14,7 @@ function TableRow({ sName, srn, dept, mail }) {
     </tr>
   );
 }
-function studentlist() {
+function userlist() {
   const dbInstance = collection(database, "StudentInfo");
 
   const [podcasts, setPodcasts] = useState();
@@ -56,4 +56,4 @@ function studentlist() {
   );
 }
 
-export default studentlist;
+export default userlist;
